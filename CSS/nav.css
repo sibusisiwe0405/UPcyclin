@@ -4,7 +4,7 @@ body {
   font-family: CarterOne-Regular;
 }
 .menu {
-      background: #0c0c0cb8; 
+      background: #0c0c0c43; 
   height: 5rem;
   position: fixed;
   width: 100%;
@@ -33,7 +33,7 @@ body {
   border-radius: 50%;
   bottom: 5px;
   left: calc(50% - 2px);
-  background: #8c136c;
+  background: #094b65;
   will-change: transform;
   transform: scale(0);
   transition: transform 0.2s ease;
@@ -51,10 +51,11 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   display: block;
-  color: #110404;
+  color: #f9f7f5;
+  font-size: 20px;
 }
 .menu-item a:hover {
-  background: #8c1380;
+  background: #094b65;
 }
 .sub-menu .menu-item {
   padding: 0.75rem 0;
