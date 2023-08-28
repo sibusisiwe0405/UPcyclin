@@ -5,7 +5,7 @@
 const navItems = [
     { href: 'index.html', text: 'Home'},
     { href: 'journey.html', text: 'Our Journey'},
-    { href: 'styleGuide.html', text: 'About us',  },
+    { href: 'about.html', text: 'About us',  },
    
 
 ];
