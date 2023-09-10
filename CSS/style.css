@@ -10,7 +10,7 @@
 
 body{
     overflow-x: hidden;
-    background: #fff;
+    background: #f4f1f1;
     min-height: 100vh;
 }
 
@@ -102,7 +102,7 @@ body{
     font-size: 10vw;
     color: #094b65;
     text-align: center;
-    line-height: 0.5em;
+    line-height: 0.7em;
     font-family: 'Rancho', cursive;
     transform: translateY(-100%);
 }
@@ -131,18 +131,17 @@ body{
     
     position: relative;
     display: flex;
-    text-align: center;
+    align-items: center;
     padding: 100px;
     background: #653909;
 }
 
-.sea h2{
+ .sea h2{
   text-align: center;
-  position: relative;
     font-size: 3.5em;
-    display: flex;
-    color: #fff;
-}
+    display: inline-block;
+    color: #f9f6f6;
+ }
 
 .sea p{
     font-size: 1em;
@@ -151,7 +150,12 @@ body{
 #rocks{
   width: 90%;
 }
-
+#line{
+  height: 100%;
+  margin-top: 100px;
+  width: 90%;
+  
+}
 
 .words {
   list-style: none;
@@ -160,6 +164,24 @@ body{
   padding: 0;
   color: aliceblue;
 }
+.letter-effect{
+    white-space: pre-wrap;
+    filter: blur(calc(var(--p) * 10px));
+    opacity: calc(1 - var(--p));
+
+}
+.containerrr {
+    height: 200vh;
+  }
+  
+  .moving-heading {
+    font-size: 3rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+  }
 @media screen and (max-width: 600px){
   .home{
     width: 100%;

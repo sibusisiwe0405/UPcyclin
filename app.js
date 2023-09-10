@@ -3,7 +3,7 @@
 const text = document.getElementById('text');
 const bird1 = document.getElementById('bird1');
 const bird2 = document.getElementById('bird2');
-const forest = document.getElementById('forest');
+const line = document.getElementById('line');
 const btn = document.getElementById('btn');
 const rocks = document.getElementById('rocks');
 const header = document.getElementById('header');
@@ -18,6 +18,6 @@ window.addEventListener('scroll', () => {
      bird2.style.left = value * -5 + 'px';
      btn.style.marginTop = value * 1.5 + 'px';
      rocks.style.top = value * -0.12 + 'px';
-     forest.style.top = value * 0.25 + 'px';
+     line.style.left = value * 2.2 + 'px';
      header.style.top = value * 0.5 + 'px'
 })
