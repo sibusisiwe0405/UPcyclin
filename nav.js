@@ -2,7 +2,7 @@
 // All items we'd like to add
 
 
-const navItems = [
+/*const navItems = [
     { href: 'index.html', text: 'Home'},
     { href: 'journey.html', text: 'Our Journey'},
     { href: 'about.html', text: 'About us',  },
@@ -64,7 +64,7 @@ const rendeMenu = () => {
 // Add list to body (or anywhere else)
 window.onload = function () {
     document.body.appendChild(navElem);
-}
+}*/
 
 class myFooter extends HTMLElement {
     connectedCallback() {
@@ -72,27 +72,22 @@ class myFooter extends HTMLElement {
         <div class="containar">
         
     <footer>
-   <div class="footer-content"> 
-    <h4>Company</h4>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="./Blogs/blogss.html">Blogs</a></li>
-        <li><a href="netart.html">Net-Art</a></li>
-        <li><a href="styleGuide.html">Style Guide</a></li>
-    </ul>
-</div>
+   
 <div class="footer-content">
     <h4>Get help</h4>
+    <br>
     <ul>
-        <li><a href="netart.html">Net-Art</a></li>
+        <li><a href="index2.html">Futhi</a></li>
     </ul>
 </div>
 <div class="footer-content">
     <h4>Contact us</h4>
+    <br>
     <div class="social-links">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
+    <ul>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+        </ul>
+
     </div>   
     
 </div>

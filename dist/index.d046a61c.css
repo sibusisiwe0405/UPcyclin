@@ -21,8 +21,32 @@ body {
   overflow-x: hidden;
 }
 
+.video-background {
+  z-index: -7;
+  width: 100%;
+  height: 150%;
+  margin-top: 190px;
+  display: block;
+  position: absolute;
+}
+
+video {
+  filter: blur(2px) grayscale(3);
+  width: 100%;
+  height: 100%;
+}
+
+.video-background2 {
+  z-index: -7;
+  width: 100%;
+  height: 150%;
+  margin-top: 120px;
+  display: block;
+  position: absolute;
+}
+
 .demo-1 {
-  background-image: linear-gradient(#010119 0%, #0f0a1e 10%, #16053d 20%, #32175e 30%, #650adb 40%, #6f0ed8 50%, #7318c3 60%, #7220ac 70%, #6c2697 80%, #af1dbf 90%, #501cca 100%);
+  background-image: linear-gradient(#0c1801 0%, #0f1c02 10%, #1f2702 20%, #2b3602 30%, #3f5101 40%, #5a6d18 50%, #6e7a43 60%, #686c56 70%, #858b84 80%, #787f76 90%, #6e756c 100%);
 }
 
 .demo-2 {
@@ -213,6 +237,7 @@ main {
 .intro__title-sub {
   margin-top: 10vh;
   font-size: clamp(1rem, 6vw, 2.75rem);
+  position: relative;
 }
 
 #line {
@@ -288,7 +313,7 @@ main {
 }
 
 .content__title:before {
-  content: "."counter(section);
+  content: "";
   text-align: center;
   margin-bottom: 10vh;
   font-family: area-normal, sans-serif;
@@ -473,6 +498,201 @@ main {
   display: inline-block;
   position: relative;
   overflow: hidden;
+}
+
+.jean {
+  width: 50%;
+  position: absolute;
+  right: 50%;
+}
+
+.ajax-loader, .ajax-loader2, .ajax-loader3, .ajax-loader4 {
+  transform-origin: 50%;
+  color: #d31145;
+  width: 1em;
+  height: 3em;
+  font-size: 80px;
+  position: absolute;
+}
+
+.ajax-loader .paw, .ajax-loader2 .paw, .ajax-loader3 .paw, .ajax-loader4 .paw {
+  opacity: 0;
+  width: 1.5em;
+  height: 1em;
+  animation: 2.05s ease-in-out infinite pawAnimation;
+}
+
+.ajax-loader .paw svg, .ajax-loader2 .paw svg, .ajax-loader3 .paw svg, .ajax-loader4 .paw svg {
+  width: 100%;
+  height: 100%;
+}
+
+.ajax-loader .paw .icon, .ajax-loader2 .paw .icon, .ajax-loader3 .paw .icon, .ajax-loader4 .paw .icon {
+  fill: #d31145;
+}
+
+.ajax-loader .paw:nth-child(odd), .ajax-loader2 .paw:nth-child(odd), .ajax-loader3 .paw:nth-child(odd), .ajax-loader4 .paw:nth-child(odd) {
+  transform: rotate(0);
+}
+
+.ajax-loader .paw:nth-child(2n), .ajax-loader2 .paw:nth-child(2n), .ajax-loader3 .paw:nth-child(2n), .ajax-loader4 .paw:nth-child(2n) {
+  transform: rotate(0)scaleX(-1)translate(15%, -50%);
+}
+
+.ajax-loader .paw:first-child, .ajax-loader2 .paw:first-child, .ajax-loader3 .paw:first-child, .ajax-loader4 .paw:first-child {
+  animation-delay: 2.25s;
+  transform: rotate(-8deg)translate3d(30%, -50%, 0);
+}
+
+.ajax-loader .paw:nth-child(2), .ajax-loader2 .paw:nth-child(2), .ajax-loader3 .paw:nth-child(2), .ajax-loader4 .paw:nth-child(2) {
+  animation-delay: 2s;
+  transform: rotate(-8deg)scaleX(-1)translate3d(-30%, -120%, 0);
+}
+
+.ajax-loader .paw:nth-child(3), .ajax-loader2 .paw:nth-child(3), .ajax-loader3 .paw:nth-child(3), .ajax-loader4 .paw:nth-child(3) {
+  animation-delay: 1.75s;
+  transform: rotate(0)translate3d(45%, -144%, 0);
+}
+
+.ajax-loader .paw:nth-child(4), .ajax-loader2 .paw:nth-child(4), .ajax-loader3 .paw:nth-child(4), .ajax-loader4 .paw:nth-child(4) {
+  animation-delay: 1.5s;
+  transform: rotate(0)scaleX(-1)translate3d(-32%, -200%, 0);
+}
+
+.ajax-loader .paw:nth-child(5), .ajax-loader2 .paw:nth-child(5), .ajax-loader3 .paw:nth-child(5), .ajax-loader4 .paw:nth-child(5) {
+  animation-delay: 1.25s;
+  transform: rotate(0)translate3d(40%, -240%, 0);
+}
+
+.ajax-loader .paw:nth-child(6), .ajax-loader2 .paw:nth-child(6), .ajax-loader3 .paw:nth-child(6), .ajax-loader4 .paw:nth-child(6) {
+  animation-delay: 1s;
+  transform: rotate(0)scaleX(-1)translate3d(-30%, -300%, 0);
+}
+
+.ajax-loader .paw:nth-child(7), .ajax-loader2 .paw:nth-child(7), .ajax-loader3 .paw:nth-child(7), .ajax-loader4 .paw:nth-child(7) {
+  animation-delay: .75s;
+  transform: rotate(1deg)translate3d(7%, -336%, 0);
+}
+
+.ajax-loader .paw:nth-child(8), .ajax-loader2 .paw:nth-child(8), .ajax-loader3 .paw:nth-child(8), .ajax-loader4 .paw:nth-child(8) {
+  animation-delay: .5s;
+  transform: rotate(1deg)scaleX(-1)translate3d(8%, -400%, 0);
+}
+
+.ajax-loader .paw:nth-child(9), .ajax-loader2 .paw:nth-child(9), .ajax-loader3 .paw:nth-child(9), .ajax-loader4 .paw:nth-child(9) {
+  animation-delay: .25s;
+  transform: rotate(0)translate3d(-36%, -432%, 0);
+}
+
+.ajax-loader .paw:nth-child(10), .ajax-loader2 .paw:nth-child(10), .ajax-loader3 .paw:nth-child(10), .ajax-loader4 .paw:nth-child(10) {
+  animation-delay: 0s;
+  transform: rotate(0)scaleX(-1)translate3d(50%, -500%, 0);
+}
+
+.no-cssanimations .ajax-loader .paw, .no-cssanimations .ajax-loader2 .paw, .no-cssanimations .ajax-loader3 .paw, .no-cssanimations .ajax-loader4 .paw {
+  opacity: 1;
+}
+
+.ajax-loader {
+  top: 15%;
+  left: 10%;
+  transform: rotate(10deg)translate(-50%);
+}
+
+.ajax-loader2 {
+  top: 15%;
+  right: 20%;
+  transform: rotate(-10deg)translate(-50%);
+}
+
+.ajax-loader3 {
+  top: 45%;
+  left: 30%;
+  transform: rotate(150deg)translate(-50%);
+}
+
+.ajax-loader4 {
+  top: 45%;
+  right: 35%;
+  transform: rotate(200deg)translate(-50%);
+}
+
+@keyframes pawAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes path1 {
+  0% {
+    transform: rotate(0)scaleX(-1)translate3d(0%, -50%, 0);
+  }
+
+  30% {
+    transform: rotate(20deg)scaleX(-1)translate3d(-35%, -60%, 0);
+  }
+
+  100% {
+    transform: rotate(20deg)scaleX(-1)translate3d(0%, -80%, 0);
+  }
+}
+
+.washing-line {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  display: flex;
+  position: relative;
+}
+
+.washing-line .line {
+  z-index: -1;
+  border-top: 2px solid #333;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.Hanger {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+}
+
+.polaroid {
+  background-color: #fff;
+  width: 200px;
+  height: 250px;
+  margin: 20px;
+  position: relative;
+  transform: rotate(-5deg);
+  box-shadow: 0 0 10px #00000080;
+}
+
+.polaroid img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.polaroid .caption {
+  color: #fff;
+  text-align: center;
+  background-color: #000000b3;
+  padding: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 @media screen and (width >= 53em) {
