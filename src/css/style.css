@@ -74,7 +74,7 @@ body{
    bottom: 0;
    width: 100%;
    height: 100px;
-   background: linear-gradient(to top, #653909, transparent);
+   background: linear-gradient(to top, #ffff00, transparent);
    z-index: 10;
 }
 
@@ -93,7 +93,7 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    background-color: #653909;
+    background-color: #faf293;
     pointer-events: none;
 }
 
@@ -133,7 +133,7 @@ body{
     display: flex;
     align-items: center;
     padding: 100px;
-    background: #653909;
+    background: #f6f0a8;
 }
 
  .sea h2{
