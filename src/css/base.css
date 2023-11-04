@@ -26,35 +26,49 @@ body {
 .video-background {
 	position: absolute;
 	display: block;
-	margin-top: 190px;
 	width: 100%;
 	height: 150%;
 	z-index: -7;
   }
   video {
 	width: 100%;
-	height: 100%;
-  filter:  blur(2px) grayscale(3);
+	height: 115%;
+  
 
   }
   .video-background2 {
 	position: absolute;
 	display: block;
-	margin-top: 120px;
 	width: 100%;
 	height: 150%;
 	z-index: -7;
   }
+.video-background3{
+	position: absolute;
+	display: block;
+	width: 50%;
+	height: 50vh;
+}
+#loading-sign {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+   }
+   
+   .show-loading-sign {
+	opacity: 1;
+   }
 .demo-1 {
 	background-image: linear-gradient(
 	  180deg,
-	  hsl(93, 92%, 5%) 0%,
-	  hsl(91, 86%, 6%) 10%,
-	  hsl(73, 90%, 8%) 20%,
-	  hsl(73, 86%, 49%) 30%,
-	  hsl(73, 98%, 16%) 40%,
-	  hsl(73, 64%, 26%) 50%,
-	  hsl(73, 29%, 37%) 60%,
+	  hsl(0, 0%, 53%) 0%,
+	  hsl(0, 0%, 40%) 10%,
+	  hsl(60, 1%, 73%) 40%,
+	  hsl(72, 16%, 58%) 50%,
+	  hsl(73, 16%, 47%) 60%,
 	  hsl(71, 11%, 38%) 70%,
 	  hsl(105, 3%, 53%) 80%,
 	  hsl(104, 4%, 48%) 90%, 
@@ -159,7 +173,9 @@ main {
 .splitting .word {
 	white-space: nowrap;
 }
-
+.crochet{
+	color: rgb(21, 61, 7);
+}
 .frame {
 	color: var(--color-title);
 	padding: var(--page-padding);
@@ -301,6 +317,10 @@ main {
 	position: relative;
 	padding: var(--page-padding);
 }
+.bordered-text {
+	border: 2px solid #000; /* Adjust the border width and color as needed */
+	padding: 10px; /* Add padding to create space between text and border */
+}
 
 .content:last-child {
 	padding-bottom: 40vh;
@@ -325,31 +345,35 @@ main {
 	font-size: clamp(1rem,3vw,2rem);
 	
 }
+.upcycle{
+	font-size: 100px;
+	font-family: "Aeonik", sans-serif;
+	color: #010101;
+	margin-left: 150px;
+	margin-top: 10px;
 
+}
 .content__title {
-	font-size: 12vw;
+	font-size: 10vw;
 	line-height: 0.8;
 	counter-increment: section;
 	text-align: center;
 	display: grid;
-	gap: 1rem;
+	gap: 2rem;
 }
 
 .content__title--left {
-	text-align: left;
-}
-
-.content__title--right {
-	text-align: right;
+	text-align: center;
+	
 }
 
 .content__title::before {
 	content: '';
-	font-weight: 400;
+	font-weight: 300;
 	font-family: area-normal, sans-serif;
 	display: block;
 	font-size: 1rem;
-	margin-bottom: 10vh;
+	margin-bottom: 5vh;
 	text-align: center;
 }
 
@@ -357,97 +381,11 @@ main {
 	display: grid;
 	grid-template-rows: auto auto;
 	grid-template-columns: 100%;
-	text-align: left;
-	gap: 2rem;
+	text-align: center;
+	gap: 1rem;
 }
 
-.content__title--sides span:last-child {
-	justify-self: end;
-}
-.container {
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-  }
-  .grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-	grid-gap: 10px;
-  }
-  .item {
-	position: relative;
-	overflow: hidden;
-	border-radius: 10px;
-  }
-  .item img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-  }
-  .item .info {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	opacity: 0;
-	transition: opacity 0.2;
-  }
-  .item:hover .info {
-	opacity: 1;
-  }
-  .item .info h2 {
-	margin: 0;
-	padding: 10px;
-  }
-  #photos {
-	/* Prevent vertical gaps */
-	line-height: 0;
-	
-	-webkit-column-count: 5;
-	-webkit-column-gap:   0px;
-	-moz-column-count:    5;
-	-moz-column-gap:      0px;
-	column-count:         5;
-	column-gap:           0px;
- }
- 
- #photos img {
-   /* Just in case there are inline attributes */
-   width: 100% !important;
-   height: auto !important;
- }
- 
- @media (max-width: 1200px) {
-   #photos {
-   -moz-column-count:    4;
-   -webkit-column-count: 4;
-   column-count:         4;
-   }
- }
- @media (max-width: 1000px) {
-   #photos {
-   -moz-column-count:    3;
-   -webkit-column-count: 3;
-   column-count:         3;
-   }
- }
- @media (max-width: 800px) {
-   #photos {
-   -moz-column-count:    2;
-   -webkit-column-count: 2;
-   column-count:         2;
-   }
- }
- @media (max-width: 400px) {
-   #photos {
-   -moz-column-count:    1;
-   -webkit-column-count: 1;
-   column-count:         1;
-   }
- }
- 
+
  body {
    margin: 0;
    padding: 0;
@@ -465,13 +403,15 @@ main {
 
 .font-3 {
 	font-family: area-normal, sans-serif;
-	font-weight: 600;
+	font-weight: 400;
+	color: #467443;
 }
 
 .font-4 {
 	font-family: campaign-serif, sans-serif;
 	font-weight: 400;
 	font-style: italic;
+	color: #467443;
 }
 
 .font-5 {
@@ -482,12 +422,13 @@ main {
 
 .font-6 {
 	font-family: afronaut, sans-serif;
-	font-weight: 400;
+	font-weight: 200;
 }
 
 .font-7 {
 	font-family: hoss-round-wide, sans-serif;
 	font-weight: 400;
+	color: #467443;
 }
 
 .font-8 {
@@ -503,7 +444,7 @@ main {
 
 .font-10 {
 	font-family: norman-stencil, sans-serif;
-	font-weight: 800;
+	font-weight: 400;
 }
 
 .font-11 {
@@ -513,7 +454,7 @@ main {
 
 .font-12 {
 	font-family: halogen, sans-serif;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 .font-13 {
@@ -566,7 +507,7 @@ main {
 
 .font-21 {
 	font-family: "gigantic", sans-serif;
-	font-weight: 900;
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -847,32 +788,20 @@ main {
     transform: rotate(20deg) scaleX(-1) translate3d(0%, -80%, 0);
   }
 }
-.washing-line {
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: flex-start;
-	padding: 20px;
-}
+
  .washing-line {
             position: relative;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: flex-start;
-            padding: 20px;
+            padding: 30px;
+			margin: 150px;
+			margin-bottom: 100px;
         }
 
         /* Style for the washing line */
-        .washing-line .line {
-            position: absolute;
-            top: 50%;
-            border-top: 2px solid #333; /* You can adjust the color and thickness */
-            transform: translateY(-50%);
-            z-index: -1; /* Place the line behind the Polaroid images */
-			
-        }
+
 .Hanger{
 	position: absolute;
 	width: 100%;
@@ -884,10 +813,12 @@ main {
             position: relative;
             width: 200px;
             height: 250px;
-            margin: 20px;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            margin: 5px;
+           padding: 10px;
+		   border: 1px solid #888;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transform: rotate(-5deg); /* Tilt the Polaroid */
+			transition: transform 0.3s;
         }
 
         /* Style for the image within the Polaroid */
@@ -895,6 +826,7 @@ main {
             width: 100%;
             height: 100%;
             object-fit: cover;
+			
         }
 
         /* Style for the Polaroid caption */
