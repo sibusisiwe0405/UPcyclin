@@ -24,27 +24,20 @@ body {
 .video-background {
   z-index: -7;
   width: 100%;
-  height: 150%;
+  height: 176%;
   display: block;
   position: absolute;
 }
 
 video {
   width: 100%;
-  height: 115%;
+  height: 118%;
 }
 
 .video-background2 {
   z-index: -7;
   width: 100%;
-  height: 150%;
-  display: block;
-  position: absolute;
-}
-
-.video-background3 {
-  width: 50%;
-  height: 50vh;
+  height: 160%;
   display: block;
   position: absolute;
 }
@@ -80,29 +73,38 @@ video {
 }
 
 .js .loading:before {
+  content: "";
+  z-index: 1000;
   background: var(--color-bg);
   width: 100%;
   height: 100%;
+  position: fixed;
   top: 0;
   left: 0;
 }
 
 .js .loading:after {
-  opacity: .4;
+  content: "";
   background: var(--color-link);
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  margin: -30px 0 0 -30px;
-  animation: .7s linear infinite alternate forwards loaderAnim;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  animation: 1.6s linear infinite forwards spinner;
+  position: fixed;
   top: 50%;
   left: 50%;
+  box-shadow: 0 0 0 6px #0000;
 }
 
-@keyframes loaderAnim {
+@keyframes spinner {
+  from {
+    transform: rotate(0);
+  }
+
   to {
-    opacity: 1;
-    transform: scale3d(.5, .5, 1);
+    transform: rotate(360deg);
   }
 }
 
@@ -321,6 +323,23 @@ main {
 
 .content--highlight p {
   font-size: clamp(1rem, 3vw, 2rem);
+}
+
+.container {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+.text {
+  text-align: center;
+  padding: 20px;
 }
 
 .upcycle {

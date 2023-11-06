@@ -226,13 +226,20 @@ span.frame__demos-item:not(:first-child) {
   border-color: #fff;
 }
 
+.headings {
+  text-align: center;
+  font-family: wayfinder-cf, serif;
+  font-size: 50px;
+  font-weight: 100;
+}
+
 .columns {
   width: var(--grid-width);
   max-width: var(--grid-max-width);
   grid-template-columns: repeat(var(--grid-columns), 1fr);
   place-items: center;
   gap: var(--grid-gap);
-  padding: 20vh 0;
+  padding: 10vh 0;
   display: grid;
   position: relative;
 }
@@ -270,6 +277,20 @@ span.frame__demos-item:not(:first-child) {
   background-position: 50% 20%;
   background-size: cover;
   position: absolute;
+}
+
+.card-content {
+  color: #fff;
+  background-color: #00000080;
+  width: 100%;
+  padding: 10px;
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
+
+.card-content:hover {
+  display: block;
 }
 
 @media screen and (width >= 53em) {

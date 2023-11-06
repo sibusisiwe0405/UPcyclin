@@ -5,11 +5,11 @@ body {
 }
 
 .menu {
-  background: #0c0c0c43;
+  background: #6d6c6c71;
   width: 100%;
   height: 5rem;
   display: block;
-  position: fixed;
+  position: absolute;
   top: 0;
 }
 
@@ -20,7 +20,8 @@ body {
 }
 
 .menu > ol {
-  max-width: 1000px;
+  max-width: 50%;
+  margin-top: 10px;
   padding: 0 3rem;
   display: flex;
 }
@@ -33,7 +34,7 @@ body {
 .menu > ol > .menu-item:after {
   content: "";
   will-change: transform;
-  background: #094b65;
+  background: #4a6d53;
   border-radius: 50%;
   width: 4px;
   height: 4px;
@@ -64,7 +65,7 @@ body {
 }
 
 .menu-item a:hover {
-  background: #094b65;
+  background: #4a6d53;
 }
 
 .sub-menu .menu-item {

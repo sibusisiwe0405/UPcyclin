@@ -93,3 +93,15 @@ preloadImages('.column__item-img').then(() => {
 	scroll();
 	document.body.classList.remove('loading');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var cards = document.getElementsByClassName('column__item-imgwrap');
+    for (var i = 0; i < cards.length; i++) {
+        cards[i].addEventListener('mouseover', function() {
+            this.getElementsByClassName('card-content')[0].style.display = 'block';
+        });
+        cards[i].addEventListener('mouseout', function() {
+            this.getElementsByClassName('card-content')[0].style.display = 'none';
+        });
+    }
+});

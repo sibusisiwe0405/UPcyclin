@@ -241,12 +241,18 @@ a:not(.card__image):focus-visible {
 span.frame__demos-item:not(:first-child) {
 	border-color: #fff;
 }
+.headings{
+	text-align: center;
+	font-family: wayfinder-cf, serif;
+	font-weight: 100;
+	font-size: 50px;
+}
 
 .columns {
 	width: var(--grid-width);
 	max-width: var(--grid-max-width);
 	position: relative;
-	padding: 20vh 0;
+	padding: 10vh 0;
 	display: grid;
 	place-items: center;
     grid-template-columns: repeat(var(--grid-columns),1fr);
@@ -287,7 +293,18 @@ span.frame__demos-item:not(:first-child) {
 	background-position: 50% 20%;
 	backface-visibility: hidden;
 }
-
+.card-content {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	width: 100%;
+	padding: 10px;
+}
+ .card-content:hover {
+	display: block;
+}
 @media screen and (min-width: 53em) {
 	.frame {
 		text-align: center; 

@@ -16,6 +16,8 @@ const wrapElements = (elems, wrapType, wrapClass) => {
     });
 }
 
+
+
 Splitting();
 
 const fx1Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect1]')];

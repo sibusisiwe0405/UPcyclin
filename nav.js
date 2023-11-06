@@ -2,10 +2,10 @@
 // All items we'd like to add
 
 
-/*const navItems = [
-    { href: 'index.html', text: 'Home'},
-    { href: 'journey.html', text: 'Our Journey'},
-    { href: 'about.html', text: 'About us',  },
+const navItems = [
+    { href: 'index.html', text: 'Our Story'},
+    { href: 'index5.html', text: 'Explore'},
+    
    
 
 ];
@@ -64,7 +64,7 @@ const rendeMenu = () => {
 // Add list to body (or anywhere else)
 window.onload = function () {
     document.body.appendChild(navElem);
-}*/
+}
 
 class myFooter extends HTMLElement {
     connectedCallback() {
