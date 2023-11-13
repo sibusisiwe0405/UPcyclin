@@ -1,22 +1,39 @@
-// Get a reference to the polaroid element
-const polaroid = document.querySelector('.polaroid');
+/** @format */
+const svg = document.getElementById("svg");
+const tl = gsap.timeline();
+const curve = "M0 502S175 272 500 272s500 230 500 230V0H0Z";
+const flat = "M0 2S175 1 500 1s500 1 500 1V0H0Z";
 
-// Define the animation using GSAP
-gsap.to(polaroid, {
-    x: 100,    // Move the polaroid 100 pixels to the right
-    y: 100,    // Move the polaroid 100 pixels down
-    rotation: 10,  // Rotate the polaroid by 10 degrees
-    duration: 2,  // Animation duration in seconds
-    ease: 'power1.inOut', // Easing function for a smooth motion
-    repeat: -1, // Repeat the animation indefinitely
-    yoyo: true // Reverse the animation on each repeat
+tl.from(".loader-wrap-heading h1", {
+  delay: 1,
+  y: 200,
+  skewY: 10,
+}).to(".loader-wrap-heading h1", {
+  delay: 1.5,
+  y: -200,
+  skewY: 10,
 });
-
-// Add a click event listener to pause and resume the animation
-polaroid.addEventListener('click', () => {
-    if (gsap.isTweening(polaroid)) {
-        gsap.pause();
-    } else {
-        gsap.resume();
-    }
+tl.to(svg, {
+  duration: 0.8,
+  attr: { d: curve },
+  ease: "power2.easeIn",
+}).to(svg, {
+  duration: 0.8,
+  attr: { d: flat },
+  ease: "power2.easeOut",
 });
+tl.to(".loader-wrap", {
+  y: -1500,
+});
+tl.to(".loader-wrap", {
+  zIndex: -1,
+  display: "none",
+});
+tl.from(
+  ".container h1",
+  {
+    y: 100,
+    opacity: 0,
+  },
+  "-=1.5"
+);
