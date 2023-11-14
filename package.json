@@ -1,9 +1,12 @@
 {
+  "homepage": "https://sibusisiwe0405.github.io/UPcyclin",
   "name": "onscrolltypographyanimations",
   "version": "1.0.0",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "description": "",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "parcel src/index.html --open",
     "clean": "rm -rf dist/*",
     "build:parcel": "parcel build src/index.html --no-content-hash --no-source-maps --public-url ./",
@@ -16,11 +19,11 @@
   "keywords": [],
   "author": "Codrops",
   "license": "MIT",
-  "homepage": "https://tympanus.net/codrops",
   "bugs": {
     "url": "https://github.com/codrops/[NAME]/issues"
   },
   "devDependencies": {
+    "gh-pages": "^6.0.0",
     "parcel": "^2.8.2"
   },
   "dependencies": {
