@@ -54,15 +54,10 @@ a:focus {
 }
 
 a:focus:not(:focus-visible) {
-	/* Remove the focus indicator on mouse-focus for browsers
-	 that do support :focus-visible */
 	background: transparent;
 }
 
 a:focus-visible {
-	/* Draw a very noticeable focus style for
-	 keyboard-focus on browsers that do support
-	 :focus-visible */
 	outline: 2px solid red;
 	background: transparent;
 }
@@ -239,7 +234,7 @@ body #cdawrap {
 	width: 100%;
 	height: auto;
 	aspect-ratio: 4 / 3;
-	filter: brightness(0.8);
+	
 }
 
 .content-wrap {
@@ -252,7 +247,7 @@ body #cdawrap {
 	grid-area: main;
 	display: grid;	
 	place-items: center;
-	line-height: 1.2;
+	
 	grid-template-areas: 'content';
 }
 
@@ -265,7 +260,7 @@ body #cdawrap {
 						  'img img'
 						  'text text';
 	grid-template-columns: 1fr 1fr;
-	gap: 1rem;
+	gap: 0.5rem;
 }
 
 .content__img {
@@ -335,7 +330,7 @@ body #cdawrap {
 .content__text {
 	grid-area: text;
 	text-transform: uppercase;
-	margin: 0;
+	margin-top: 10px;
 	opacity: 0.5;
 }
 

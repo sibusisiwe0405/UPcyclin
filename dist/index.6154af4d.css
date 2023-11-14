@@ -222,7 +222,6 @@ body #cdawrap {
 
 .card__image {
   aspect-ratio: 4 / 3;
-  filter: brightness(.8);
   background-position: 50%;
   background-size: cover;
   border-radius: 7px;
@@ -241,7 +240,6 @@ body #cdawrap {
   grid-area: main;
   grid-template-areas: "content";
   place-items: center;
-  line-height: 1.2;
   display: grid;
 }
 
@@ -254,7 +252,7 @@ body #cdawrap {
   grid-template-areas: "title-up title-down"
                        "img img"
                        "text text";
-  gap: 1rem;
+  gap: .5rem;
 }
 
 .content__img {
@@ -324,7 +322,7 @@ body #cdawrap {
   text-transform: uppercase;
   opacity: .5;
   grid-area: text;
-  margin: 0;
+  margin-top: 10px;
 }
 
 @media screen and (width >= 53em) {
