@@ -595,53 +595,52 @@ const wrapElements = (elems, wrapType, wrapClass)=>{
 };
 (0, _splittingDefault.default)();
 const fx1Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect1]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect1]")
 ];
 const fx2Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect2]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect2]")
 ];
 const fx3Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect3]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect3]")
 ];
 const fx4Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect4]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect4]")
 ];
 const fx5Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect5]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect5]")
 ];
 const fx6Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect6]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect6]")
 ];
 const fx7Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect7]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect7]")
 ];
 const fx8Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect8]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect8]")
 ];
 const fx9Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect9]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect9]")
 ];
 const fx10Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect10]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect10]")
 ];
 const fx11Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect11]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect11]")
 ];
 const fx12Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect12]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect12]")
 ];
 const fx13Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect13]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect13]")
 ];
 const fx14Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect14]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect14]")
 ];
 const fx15Titles = [
-    ...document.querySelectorAll(".content__title[data-splitting][data-effect15]")
+    ...document.querySelectorAll(".heading1[data-splitting][data-effect15]")
 ];
 // Lenis smooth scrolling
 let lenis;
-// Initialize Lenis smooth scrolling
 const initSmoothScrolling = ()=>{
     lenis = new (0, _lenisDefault.default)({
         lerp: 0.2,
@@ -1103,53 +1102,7 @@ const scroll = ()=>{
     scroll();
 });
 
-},{"./utils":"72Dku","@studio-freight/lenis":"ggVJc","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","splitting/dist/splitting.css":"3uR7n","splitting/dist/splitting-cells.css":"7jeGL","splitting":"77jB6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"72Dku":[function(require,module,exports) {
-// Preload images
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "preloadFonts", ()=>preloadFonts);
-const preloadFonts = (id)=>{
-    return new Promise((resolve)=>{
-        WebFont.load({
-            typekit: {
-                id: id
-            },
-            active: resolve
-        });
-    });
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"ggVJc":[function(require,module,exports) {
+},{"./utils":"72Dku","@studio-freight/lenis":"ggVJc","gsap":"fPSuC","gsap/ScrollTrigger":"7wnFk","splitting/dist/splitting.css":"3uR7n","splitting/dist/splitting-cells.css":"7jeGL","splitting":"77jB6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"ggVJc":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>c);

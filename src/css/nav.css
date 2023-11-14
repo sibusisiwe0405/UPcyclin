@@ -3,8 +3,9 @@ body {
   padding-top: 50px;
   font-family: CarterOne-Regular;
 }
+
 .menu {
-      background: #6d6c6c71; 
+      background: #6d6c6c00; 
   height: 5rem;
   position:absolute;
   width: 100%;

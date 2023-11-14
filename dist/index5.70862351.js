@@ -630,7 +630,6 @@ const fx29Titles = [
 ];
 // Lenis smooth scrolling
 let lenis;
-// Initialize Lenis smooth scrolling
 const initSmoothScrolling = ()=>{
     lenis = new (0, _lenisDefault.default)({
         lerp: 0.2,

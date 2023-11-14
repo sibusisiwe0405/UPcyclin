@@ -20,21 +20,21 @@ const items = columns.map((column, pos) => {
 // All itemms
 const mergedItems = items.flat();
 
-// Function to initialize Lenis for smooth scrolling
+
 const initSmoothScrolling = () => {
-	// Instantiate the Lenis object with specified properties
+
 	lenis = new Lenis({
-		lerp: 0.2, // Lower values create a smoother scroll effect
-		smoothWheel: true // Enables smooth scrolling for mouse wheel events
+		lerp: 0.2, 
+		smoothWheel: true 
 	});
 
-	// Update ScrollTrigger each time the user scrolls
+	
 	lenis.on('scroll', () => ScrollTrigger.update());
 
-	// Define a function to run at each animation frame
+	
 	const scrollFn = (time) => {
-		lenis.raf(time); // Run Lenis' requestAnimationFrame method
-		requestAnimationFrame(scrollFn); // Recursively call scrollFn on each frame
+		lenis.raf(time); 
+		requestAnimationFrame(scrollFn); 
 	};
 	// Start the animation frame loop
 	requestAnimationFrame(scrollFn);
@@ -46,7 +46,7 @@ const scroll = () => {
 	const rowMapping = {
 		even: {
 			skewX: 10,
-			xPercent: 2, // hardcoding here what seems to be the perfect value for the effect...
+			xPercent: 2, 
 			transformOrigin: '0% 50%'
 		},
 		odd: {
@@ -87,7 +87,7 @@ const scroll = () => {
 	});
 }
 
-// Preload images, initialize smooth scrolling, apply scroll-triggered animations, and remove loading class from body
+// Preload images.
 preloadImages('.column__item-img').then(() => {
 	initSmoothScrolling();
 	scroll();

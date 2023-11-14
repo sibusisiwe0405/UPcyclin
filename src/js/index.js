@@ -20,26 +20,26 @@ const wrapElements = (elems, wrapType, wrapClass) => {
 
 Splitting();
 
-const fx1Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect1]')];
-const fx2Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect2]')];
-const fx3Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect3]')];
-const fx4Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect4]')];
-const fx5Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect5]')];
-const fx6Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect6]')];
-const fx7Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect7]')];
-const fx8Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect8]')];
-const fx9Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect9]')];
-const fx10Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect10]')];
-const fx11Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect11]')];
-const fx12Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect12]')];
-const fx13Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect13]')];
-const fx14Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect14]')];
-const fx15Titles = [...document.querySelectorAll('.content__title[data-splitting][data-effect15]')];
+const fx1Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect1]')];
+const fx2Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect2]')];
+const fx3Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect3]')];
+const fx4Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect4]')];
+const fx5Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect5]')];
+const fx6Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect6]')];
+const fx7Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect7]')];
+const fx8Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect8]')];
+const fx9Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect9]')];
+const fx10Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect10]')];
+const fx11Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect11]')];
+const fx12Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect12]')];
+const fx13Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect13]')];
+const fx14Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect14]')];
+const fx15Titles = [...document.querySelectorAll('.heading1[data-splitting][data-effect15]')];
 
 // Lenis smooth scrolling
 let lenis;
 
-// Initialize Lenis smooth scrolling
+
 const initSmoothScrolling = () => {
 	
     lenis = new Lenis({

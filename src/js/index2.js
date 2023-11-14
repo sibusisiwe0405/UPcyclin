@@ -26,7 +26,7 @@ const fx29Titles = [...document.querySelectorAll('.content__title[data-splitting
 // Lenis smooth scrolling
 let lenis;
 
-// Initialize Lenis smooth scrolling
+
 const initSmoothScrolling = () => {
 	
     lenis = new Lenis({
