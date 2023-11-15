@@ -45,10 +45,8 @@ a:hover {
 	outline: none;
 }
 
-/* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
+
 a:focus {
-	/* Provide a fallback style for browsers
-	 that don't support :focus-visible */
 	outline: none;
 	background: lightgrey;
 }
@@ -238,6 +236,7 @@ body #cdawrap {
 }
 
 .content-wrap {
+	margin-bottom: 30px;
 	display: grid;
 	place-items: center;
 	grid-template-areas: 'main';
@@ -252,7 +251,7 @@ body #cdawrap {
 }
 
 .content-wrap .content:first-child {
-	height: 100vh;
+	height: 50vh;
 }
 
 .content--layout {
@@ -351,7 +350,7 @@ body #cdawrap {
 	}
 
 	.content-wrap:not(:last-child) {
-		margin-bottom: 30vmax;
+		margin-bottom: 30px;
 	}
 
 	.content__img {
