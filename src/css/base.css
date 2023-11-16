@@ -39,7 +39,7 @@ body {
   .video-background2 {
 	position: absolute;
 	display: block;
-	width: 100%;
+	width: 110%;
 	height: 150vh;
 	z-index: -7;
   }

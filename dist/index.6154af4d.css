@@ -233,6 +233,7 @@ body #cdawrap {
 .content-wrap {
   grid-template-areas: "main";
   place-items: center;
+  margin-bottom: 30px;
   display: grid;
 }
 
@@ -244,7 +245,7 @@ body #cdawrap {
 }
 
 .content-wrap .content:first-child {
-  height: 100vh;
+  height: 50vh;
 }
 
 .content--layout {
@@ -342,7 +343,7 @@ body #cdawrap {
   }
 
   .content-wrap:not(:last-child) {
-    margin-bottom: 30vmax;
+    margin-bottom: 30px;
   }
 
   .content__img {
